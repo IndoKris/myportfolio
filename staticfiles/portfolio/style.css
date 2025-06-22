@@ -1,0 +1,256 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sticky Footer Layout */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(130deg, #2F2F2F, #1A1A1A);
+  color: #F9F9F9;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #2F2F2F, #1A1A1A);
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffd100;
+  font-weight: 900;
+  transition: color 0.4s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #2F2F2F, #1A1A1A);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+  color: #FFD700;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #FFD700;
+  color: #1A1A1A;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f38c16;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 4px solid #FFD700;
+  object-fit: cover;
+}
+
+/* About Section */
+.about-page{
+  padding: 60px 20px;
+  background-color: #2F2F2F;
+  color: #F9F9F9;
+  min-height: 80vh;
+}
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #1A1A1A;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+.about-container h2 {
+   margin: 12px 0;
+  font-size: 1.8rem;
+  color: #FFD700;
+  line-height: 1.8;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 3%;
+  background: linear-gradient(135deg, #2F2F2F, #1A1A1A);
+  color: #aba3a3;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fffffe;
+  font-weight: bold;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #373A40;
+  color: #FFD700;
+  text-decoration: none;
+  border-radius: 16px;
+  padding: 80px 80px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  box-shadow: 0 8px 10px rgba(214, 213, 213, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background-color: #272829;
+  color: #fafafa;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 30px 15px;
+  }
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1A1A1A;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #2F2F2F;
+  color: #F9F9F9;
+  min-height: 80vh;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #1A1A1A;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+.contact-details a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.freelance-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #ccc;
+}
