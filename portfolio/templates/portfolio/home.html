@@ -1,0 +1,20 @@
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+
+{% block title %}Home | Krish{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span class="highlight">Krish</span></h1>
+    <p>
+  An engineering student who loves diving into how things work behind the scenes.<br>
+  From building web apps to exploring AI and cybersecurity,<br> I'm always curious and eager to turn ideas into something real.
+</p>
+    <a href="/projects" class="btn">See My Work</a>
+  </div>
+  <div class="hero-image">
+    <img src="{% static 'portfolio/images/profile.jpg' %}" alt="Profile">
+  </div>
+</section>
+{% endblock %}
